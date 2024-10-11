@@ -1,0 +1,9 @@
+{
+    "configurations": [
+        {
+            "name": "C#: Запустить стартап-проект",
+            "type": "dotnet",
+            "request": "launch"
+        }
+    ]
+}
