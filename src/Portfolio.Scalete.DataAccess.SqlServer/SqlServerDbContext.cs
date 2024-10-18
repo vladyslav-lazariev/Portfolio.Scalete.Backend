@@ -15,5 +15,7 @@ public class SqlServerDbContext : DbContext
         _configuration = configuration;
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) =>
-        optionsBuilder.UseSqlServer(_configuration.GetConnectionString("DefaultConnection"));
+        optionsBuilder.UseSqlServer(
+            _configuration.GetConnectionString("DefaultConnection"),
+            m => m.MigrationsAssembly(typeof(SqlServerDbContext).Assembly.GetName().Name));
 }
