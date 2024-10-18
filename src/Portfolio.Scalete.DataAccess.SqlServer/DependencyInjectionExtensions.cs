@@ -2,7 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Portfolio.Scalete.DataAccess.SqlServer;
 
-public static class PersistentDependencyInjection
+public static class DependencyInjectionExtensions
 {
     public static IServiceCollection AddPersistent(this IServiceCollection services)
     {
