@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "C#: Запустить стартап-проект",
+            "name": "C#: Launch Startup Project",
             "type": "dotnet",
             "request": "launch"
         }
